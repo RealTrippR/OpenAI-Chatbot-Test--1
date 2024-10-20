@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk Chatbot</title>
+</head>
+<body>
+    <h1>Help Desk Chatbot</h1>
+
+    <form action="/handlePrompt">
+        <input type="text" name="query" id="query" placeholder="How can I help you?" required />
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Help Desk Bot:</h2>
+
+    <pre>{{ help_desk_text }}</pre>
+</body>
+</html>
